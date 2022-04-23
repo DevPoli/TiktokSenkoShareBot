@@ -68,9 +68,9 @@ def SendView(item_id):
                 impr_id = req.json()["log_pb"]["impr_id"]
                 TotalSendedShare += 1
                 if DebugMode == True:
-                    print(Colorate.Horizontal(Colors.green_to_white, f"[SUCSESS]Sended Share: {TotalSendedShare} ({impr_id})"))
+                    print(Colorate.Horizontal(Colors.green_to_white, f"[DebugModeSuccess]Sended Share: {TotalSendedShare} ({impr_id})"))
                 else:
-                    print(Colorate.Horizontal(Colors.green_to_white, f"[SUCCESS]SenkoBot Share Has Sended! - Total = {TotalSendedShare}"))
+                    print(Colorate.Horizontal(Colors.green_to_white, f"[+]SenkoBot Share Has Sended! - Total = {TotalSendedShare}"))
                     Title(f"SenkoBotShares CPU Thread :{str(active_count()-1)} | Shared :{TotalSendedShare}  Fail Shared :{TotalFailedReq}")
             else:
                 pass
